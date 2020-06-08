@@ -1,2 +1,2 @@
-# zunairviqar.github.io
+# zunairviqar.github.io-Comic
 Communications Lab Second Assignment
