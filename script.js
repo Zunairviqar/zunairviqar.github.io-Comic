@@ -1,3 +1,4 @@
+// https://www.w3schools.com/jquery/jquery_fade.asp
 $(document).ready(function(){
   $(".bg").click(function(){
     $(".vertical-menu").fadeIn("slow");
