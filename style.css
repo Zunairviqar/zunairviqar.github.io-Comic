@@ -92,7 +92,7 @@ text-decoration: underline;
   position: absolute;
   text-align: left;
   top:85%;
-  left: 30%
+  left: 44%
 }
 
 .vertical-menu a {
@@ -191,29 +191,42 @@ input[type=submit]:hover {
 .column {
   flex: 25%;
   padding: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 2%;
 
 }
 .column img{
     border: 1px solid #85cb8d;
-    height:200px;
-    width: 180px;
+    height:110px;
+    /* width: 180px; */
     border-radius: 2px;
-    margin-top: 10%;
+    /* margin-top: 10%; */
 }
 
 .column p{
   position: relative;
-  top: 25%;
-  right: 30%;
+  top: 10%;
+  right: 35%;
+  margin: 0;
   color:#85cb8d;
   font-family: "Andale Mono", AndaleMono, monospace;
   font-weight: lighter;
+  text-align: left;
   font-size:20px;
   opacity: 0.8;
   /* border: 1px solid #ccc; */
   padding: 15px;
   border-radius: 4px;
 }
+
+.UnderlineEffect{
+  position: absolute;
+  right: 58%;
+  bottom:19%;
+
+  font-family: "Andale Mono", AndaleMono, monospace;
+  font-weight: lighter;
+  font-size:20px;
+}
+
 
 /* Above code is to format the Images and the text along with the images on the Team page. Code is inspired from w3schools, not specifically from any link */
