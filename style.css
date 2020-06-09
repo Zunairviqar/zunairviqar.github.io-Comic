@@ -1,0 +1,135 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.bg {
+  /* The image used */
+  background: url('images/Background.png');
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* The black bar at the left for the menu */
+.sidebar {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  color: black;
+  background-color: black;
+}
+
+.topbar {
+  width: 100%; /* Set a width if you like */
+  position: absolute;
+  top: 3%;
+  height: 18%;
+  color: white;
+  background-color: black;
+}
+
+.vertical-menu {
+  width: 20%; /* Set a width if you like */
+  position: absolute;
+  text-align: left;
+  top:16%;
+}
+
+.vertical-menu a {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  color: #85cb8d; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 35px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+text-decoration: underline;
+}
+
+.vertical-menu a.active {
+  text-decoration: underline;
+}
+/* Temporary Background Images */
+.bg1 {
+  /* The image used */
+  background: url('images/About.jpg');
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg2 {
+  /* The image used */
+  background: url('images/Team.jpg');
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg3 {
+  background-color: #85cb8d;
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* https://www.w3schools.com/howto/howto_css_contact_form.asp */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: lightblue;
+  color: black;
+  margin-left: 45%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  opacity: 0.7;
+  background-color: lightgrey;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  position: absolute;
+  font-family: "Courier New", Courier, monospace;
+  color: #85cb8d; /* Black text color */
+  top: 25%;
+  right: 9%;
+  margin-left: 29%;
+  text-align: left;
+  font-size: 23px;
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+}
