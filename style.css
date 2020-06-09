@@ -32,12 +32,35 @@ body, html {
   color: white;
   background-color: black;
 }
-
-.vertical-menu {
-  width: 20%; /* Set a width if you like */
+.Shutuptext{
+  width: 40%; /* Set a width if you like */
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  color: #85cb8d; /* Black text color */
   position: absolute;
   text-align: left;
-  top:16%;
+  top:29%;
+  left: 36.5%
+}
+/* Inspired by https://html-online.com/articles/blinking-text-css-animation/ */
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000; }
+    49%{    color: #85cb8d; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #85cb8d;    }
+}
+
+.vertical-menu {
+  width: 40%; /* Set a width if you like */
+  position: absolute;
+  display: none;
+  text-align: left;
+  top:17%;
+  left: 35%
 }
 
 .vertical-menu a {
@@ -45,7 +68,7 @@ body, html {
   font-size: 30px;
   color: #85cb8d; /* Black text color */
   display: block; /* Make the links appear below each other */
-  padding: 35px; /* Add some padding */
+  padding: 20px; /* Add some padding */
   text-decoration: none; /* Remove underline from links */
 }
 
@@ -59,7 +82,7 @@ text-decoration: underline;
 /* Temporary Background Images */
 .bg1 {
   /* The image used */
-  background: url('images/About.jpg');
+  background: url('images/Screen.jpg');
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
@@ -70,7 +93,7 @@ text-decoration: underline;
 
 .bg2 {
   /* The image used */
-  background: url('images/Team.jpg');
+  background: url('images/Screen.jpg');
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
