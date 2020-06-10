@@ -29,7 +29,7 @@ setTimeout(function () {
 }, 4000);
 
 var j = 0;
-var txt2 = 'Tonya, Sophomore, From Pakistan, Enjoys chicken dinners in PUBG.'; /* The text */
+var txt2 = 'Tonya Zhang, Sophomore, From China, Visual Arts Major, Passionate about illustration and graphic design, Cooks omelettes.'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 setTimeout(function () {
     $("#SecondImage").ready(function typeWriter2() {
@@ -40,14 +40,14 @@ setTimeout(function () {
       }
     });
 }, 4000);
-// console.log(txt2.length);
+console.log(txt2.length);
 
 setTimeout(function () {
     $("#ThirdImage").show()
-}, 8000);
+}, 11000);
 
 var k = 0;
-var txt3 = 'Yahia, Sophomore, From Pakistan, Enjoys chicken dinners in PUBG.'; /* The text */
+var txt3 = 'Yahia Beethoven, Sophomore, From Egypt, Enjoys sushi after playing squash.'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 setTimeout(function () {
     $("#ThirdImage").ready(function typeWriter3() {
@@ -57,14 +57,15 @@ setTimeout(function () {
         setTimeout(typeWriter3, speed);
       }
     });
-}, 8000);
+}, 11000);
+console.log(txt3.length);
 
 setTimeout(function () {
     $("#FourthImage").show()
-}, 12500);
+}, 15500);
 
 var l = 0;
-var txt4 = 'Yahia, Sophomore, From Pakistan, Enjoys chicken dinners in PUBG.'; /* The text */
+var txt4 = 'Joonha Yu, Sophomore, CS Major, Sleeping at 6:30 AM to make a webpage.'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 setTimeout(function () {
     $("#FourthImage").ready(function typeWriter4() {
@@ -74,11 +75,13 @@ setTimeout(function () {
         setTimeout(typeWriter4, speed);
       }
     });
-}, 12500);
+}, 15500);
+console.log(txt4.length);
+
 
 setTimeout(function () {
     $(".UnderlineEffect").show()
-}, 16500);
+}, 19500);
 
 var m = 0;
 var txt5 = 'Are you being hacked or blackmailed?'; /* The text */
