@@ -24,10 +24,6 @@ $(document).ready(function typeWriter1() {
   }
 });
 
-setTimeout(function () {
-    $("#SecondImage").show()
-}, 4000);
-
 var j = 0;
 var txt2 = 'Tonya, Sophomore, From Pakistan, Enjoys chicken dinners in PUBG.'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
