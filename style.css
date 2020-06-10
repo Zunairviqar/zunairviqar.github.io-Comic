@@ -15,23 +15,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* The black bar at the left for the menu */
-.sidebar {
-  position: absolute;
-  width: 20%;
-  height: 100%;
-  color: black;
-  background-color: black;
-}
 
-.topbar {
-  width: 100%; /* Set a width if you like */
-  position: absolute;
-  top: 3%;
-  height: 18%;
-  color: white;
-  background-color: black;
-}
 .Shutuptext{
   width: 40%; /* Set a width if you like */
   font-family: "Andale Mono", AndaleMono, monospace;
@@ -120,7 +104,7 @@ text-decoration: underline;
 
 .bg2 {
   /* The image used */
-  background: url('images/Screen.jpg');
+  background: url('images/Screen.jpg') ;
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
@@ -142,11 +126,15 @@ text-decoration: underline;
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
+  color:#85cb8d;
+  font-family: "Andale Mono", AndaleMono, monospace;
+
+  background-color: black;
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  border: 1px solid black;
+  /* border-radius: 4px; */
+  /* box-sizing: border-box;  */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
@@ -172,16 +160,19 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 .container {
   position: absolute;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Andale Mono", AndaleMono, monospace;
   color: #85cb8d; /* Black text color */
-  top: 25%;
-  right: 9%;
-  margin-left: 29%;
+  top: 15%;
+  right: 18%;
+  margin-left: 11.6%;
   text-align: left;
-  font-size: 23px;
+  font-weight: lighter;
+  opacity: 0.8;
+  font-size: 20px;
   border-radius: 5px;
-  background-color: black;
+  background-color: none;
   padding: 20px;
+  /* background-color: white; */
 }
 
 /* Below code is to format the Images and the text along with the images on the Team page. Code is inspired from w3schools, not specifically from any link */
@@ -222,11 +213,25 @@ input[type=submit]:hover {
   position: absolute;
   right: 58%;
   bottom:19%;
-
   font-family: "Andale Mono", AndaleMono, monospace;
   font-weight: lighter;
   font-size:20px;
 }
 
+.Contact-text{
+  position: relative;
+  top: 3%;
+  right: -12%;
+  margin: 0;
+  color:#85cb8d;
+  font-family: "Andale Mono", AndaleMono, monospace;
+  font-weight: lighter;
+  text-align: left;
+  font-size:20px;
+  opacity: 0.8;
+  /* border: 1px solid #ccc; */
+  padding: 15px;
+  border-radius: 4px;
+}
 
 /* Above code is to format the Images and the text along with the images on the Team page. Code is inspired from w3schools, not specifically from any link */
