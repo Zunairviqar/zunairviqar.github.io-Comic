@@ -8,12 +8,13 @@ body, html {
 .bg {
   /* The image used */
   background: url('images/Background.png');
+  background-size: 100% 100%;
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 .Shutuptext{
@@ -75,7 +76,7 @@ text-decoration: underline;
   width: 50%; /* Set a width if you like */
   position: absolute;
   text-align: left;
-  top:85%;
+  top:82%;
   left: 44%
 }
 
@@ -105,12 +106,13 @@ text-decoration: underline;
 .bg2 {
   /* The image used */
   background: url('images/Screen.jpg') ;
+  background-size: 100% 100%;
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 .bg3 {
