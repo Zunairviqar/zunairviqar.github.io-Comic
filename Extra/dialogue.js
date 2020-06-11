@@ -31,7 +31,7 @@ function typeWriter(text, delay, position) {
                 isStyling = true;
                 lenNum = parseInt(text.charAt(p+1),10);  // get length of the number
                 lenTxt = parseInt(text.substr(p+2,lenNum),10);  // get length of the styling text
-                s = text.substr(p+2+lenNum,lenTxt);  // style. syntax: "attribute:value;attribute:value;"
+                s = text.substr(p+2+lenNum,lenTxt);  // style. syntax: "attribute:value attribute:value"
                 tag = document.createElement("span");
 
                 attrib = document.createAttribute("style");
@@ -68,29 +68,44 @@ function typeWriter(text, delay, position) {
 
                 p+=lenTxt+lenNum+2;
             } else {isOption = false;p++;}
-        } else if (c=='$') {  // "Return home" feature
-            tag = document.createElement("span");
-
-            attrib1 = document.createAttribute("onclick");
-            attrib1.value = "window.history.back()";
-            tag.setAttributeNode(attrib1);  // set onclick of span tag
-
-            attrib2 = document.createAttribute("class");
-            attrib2.value = "option";
-            tag.setAttributeNode(attrib2);  // set class of span tag
-
-            attrib3 = document.createAttribute("style");
-            attrib3.value = "color:tomato";
-            tag.setAttributeNode(attrib3);  // set style of span tag
-
-            tag.innerText = "<END. Click Here To Return Home>";
-            dialogue.appendChild(tag);
-            p++;
         }
-
         if (isStyling||isOption) {dialogue = dialogue.getElementsByTagName("span")[dialogue.getElementsByTagName("span").length-1];}
         dialogue.innerHTML += text.charAt(p);
+        // console.log(dialogue.innerHTML.length);
+        // x = dialogue.innerHTML;
+        // console.log(x.length - 1);
+
         if (skip) {typeWriter(text, delay, ++p);}
         else {setTimeout(function(){typeWriter(text, delay, ++p)}, d);}
     } else {skip = false;}
+    // console.log("Hi");
+    // console.log(dialogue.innerHTML);
+    // console.log(dialogue.innerHTML.charAt(117));
+    // console.log(dialogue.innerHTML.charAt(116));
+    // console.log(dialogue.innerHTML.charAt(115));
+    // console.log(dialogue.innerHTML.charAt(114));
+    if(dialogue.innerHTML.charAt(115)== "N" &&dialogue.innerHTML.charAt(116) =="D"){
+    console.log("hello");
+    $("#Menu").show();
+    }
+    else if(dialogue.innerHTML.charAt(225)== "N" &&dialogue.innerHTML.charAt(226) =="D"){
+    console.log("hello");
+    $("#Menu").show();
+    }
+    else if(dialogue.innerHTML.charAt(223)== "N" &&dialogue.innerHTML.charAt(224) =="D"){
+    console.log("hello");
+    $("#Menu").show();
+    }
+    else if(dialogue.innerHTML.charAt(185)== "N" &&dialogue.innerHTML.charAt(186) =="D"){
+    console.log("hello");
+    $("#Menu").show();
+    }
+    else if(dialogue.innerHTML.charAt(211)== "N" &&dialogue.innerHTML.charAt(212) =="D"){
+    console.log("hello");
+    $("#Menu").show();
+    }
+    else if(dialogue.innerHTML.charAt(221)== "N" &&dialogue.innerHTML.charAt(222) =="D"){
+    console.log("hello");
+    $("#Menu").show();
+    }
 }

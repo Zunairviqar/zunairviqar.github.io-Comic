@@ -37,10 +37,10 @@ let transcript = {
         ➡Unknown > DO YOU RECOGNIZE YOURSELF?✔ \
         ➡Unknown > DO WHAT I SAY OR UNPLEASANT THINGS ARE GOING TO HAPPEN.✔ \
         ➡Unknown > MEET ME BEHIND THE FACULTY RESIDENCE BUILDING IN 30 MINUTES.✔ \
-        ✔ ✔ ✔ ❌ \
+        ✔ ✔ ✔ ✔ ✔ ✔ ❌ \
         ➡Omar > what the fuck?✔ I didn't add him. ✔ Did he hack into my account?✔ \
         ➡Omar > what should I do?✔ \
-        ➡ Your_Choices > ➰18recorderGrab_Recorder➰ / ➰16ignoreIgnore➰ / ➰14GTTPGo_to_the_place➰\
+        ➡ Your_Choices > ➰16ignoreIgnore➰ / ➰14GTTPGo_to_the_place➰\
         ",
     "SP":
         "❌Principal > We recently got an email from one of our students,✔ whose name I will not disclose,✔ that contained a picture.✔ \
@@ -73,7 +73,8 @@ let transcript = {
         ➡Unknown > THERE IS ONLY ONE THING YOU CAN DO TO PREVENT THAT FROM HAPPENING. ✔ \
         ✔ ❌ \
         ➡Unknown >  SEE THIS BAG ON THE FLOOR?✔ IT CONTAINS SOMETHING THAT YOU HAVE TO PUT IN THE LOUNGE WATER DISPENSER BEFORE 12 PM TOMORROW.✔ THE SECURITY CAMERAS WILL BE TURNED OFF.✔ MAKE SURE YOU ARE NOT SEEN BY ANYONE. ✔ \
-        ➡ Your_Choices > ➰14NDDIKnock_Down_N_Delete_Images➰ / ➰16complyComply➰",
+        ➡ Your_Choices > ➰14NDDIKnock_Down_N_Delete_Images➰ / ➰16complyComply➰ / ➰19recorder1Use_Recorder➰\
+        ",
     "ignore":
         "❌Omar > WHERE DID HE GET THAT IMAGE FROM?✔ \
         ➡Omar > I don't remember being seen by anyone.✔ \
@@ -87,7 +88,7 @@ let transcript = {
         ",
     "OL":
         "❌Omar > I didn't do that.✔ I have absolutely no intention of harming the school's dignity like that.✔ ALso, you know that I am here on a scholarship.✔ Why would I put myself in such danger? ✔ \
-        ➡Principal > Omar. ✔ \
+        ➡Principal > Bob. ✔ \
         ➡Principal > When you broke into my office,✔ you clearly overlooked something important.✔ \
         ➡Principal > You didn't realize there was a hidden camera,✔ right?✔ \
         ➡Omar > What?!.✔ \
@@ -104,91 +105,91 @@ let transcript = {
         "❌Omar > It's been two years since that accident.✔ \
         ➡Omar > I still can't sleep at night trying to figure out who the hacker was.✔ \
         ➡Omar > fuck,✔ who in the world hates me that much?✔ \
-        ➡ $\
+        ➡END✔ \
         ",
     "comply":
-        "❌Omar > this should do the job.✔ \
-        ➡Omar > I hope no one was watching.✔\
+        "❌Bob > this should do the job.✔ \
+        ➡Bob > I hope no one was watching.✔\
         ➡ Your_Choice > ➰1420YJ20_Years_In_Jail➰\
         ",
     "NDDI":
         "❌Unknown > AAAARGH.✔\
         ➡Unknown > ...✔\
-        ➡Omar > *pant*✔\
-        ➡Omar > I should delete the images immediately while he is unconscious.✔\
-        ➡Omar > this should do the job.✔\
+        ➡Bob > *pant*✔\
+        ➡Bob > I should delete the images immediately while he is unconscious.✔\
+        ➡Bob > this should do the job.✔\
         ➡Unknown > ..ha..✔ha..✔ha.✔\
-        ❌Omar > ?!... what the fuck?✔\
+        ❌Bob > ?!... what the fuck?✔\
         ➡Unknown > ...There is no escape.✔ I wrote a program that will send your image automatically in 2 hours.✔\
         ➡ Your_Choices > ➰15bluffBluff➰ / ➰14killKill➰\
         ",
     "10YJ":
-        "❌Omar > *sob*✔\
-        ➡Omar > I✔ want✔ everything✔ to✔ be✔ normal✔ again.✔\
-        ➡Omar > If only that fucker didn't do anything!✔\
-        ➡Omar > it's all his fault.✔\
-        ➡ $\
+        "❌Bob > *sob*✔\
+        ➡Bob > I✔ want✔ everything✔ to✔ be✔ normal✔ again.✔\
+        ➡Bob > If only that fucker didn't do anything!✔\
+        ➡Bob > it's all his fault.✔\
+        ➡END.✔\
         ",
     "2MJ":
-        "❌Omar > It's been a year since that accident.✔\
-        ➡Omar > I am back home after spending two months in jail.✔\
-        ➡Omar > I had to drop college and pick-up a part-time software engineering job.✔ The pay sucks, but at least they didn't✔\
+        "❌Bob > It's been a year since that accident.✔\
+        ➡Bob > I am back home after spending two months in jail.✔\
+        ➡Bob > I had to drop college and pick-up a part-time software engineering job.✔ The pay sucks, but at least they didn't✔\
         bother with checking my criminal history.✔\
-        ➡Omar > My parents are friends are avoiding me.✔\
+        ➡Bob > My parents are friends are avoiding me.✔\
         ✔ ❌ \
-        ➡Omar > I still can't sleep at night trying to figure out who the hacker was.✔\
-        ➡Omar: FUCK.✔\
-        ➡Omar > WHOEVER YOU ARE, I WILL KILL YOU ONE DAY.✔\
-        ➡Omar > just you wait.✔\
-        ➡ $\
+        ➡Bob > I still can't sleep at night trying to figure out who the hacker was.✔\
+        ➡Bob: FUCK.✔\
+        ➡Bob > WHOEVER YOU ARE, I WILL KILL YOU ONE DAY.✔\
+        ➡Bob > just you wait.✔\
+        ➡END.✔\
         ",
     "recorder1":
-        "❌Omar > you are being recorded.✔\
-        ➡Omar > Delete that image immediately,✔ or you are done.✔\
-        ➡Omar > I know who you are.✔\
+        "❌Bob > you are being recorded.✔\
+        ➡Bob > Delete that image immediately,✔ or you are done.✔\
+        ➡Bob > I know who you are.✔\
         ➡Unknown > !!✔\
         ❌Unknown > I set an automatic..✔\
-        ➡Omar > I don't care.✔\
+        ➡Bob > I don't care.✔\
         ➡Unknown > ..FINE.✔\
         ➡Unknown > *deletes the images*✔\
         ➡ Your_Choice > ➰13GE2Good_Ending➰\
         ",
     "bluff":
         "❌nice try.✔\
-        ➡Omar > I know you are bluffing.✔\
-        ➡Omar > Get lost.✔\
+        ➡Bob > I know you are bluffing.✔\
+        ➡Bob > Get lost.✔\
         ➡Unknown >IT WILL NOT END THAT EASY.✔ YOU KNOW THAT.✔\
         ➡ Your_Choice > ➰15AOBBSNext➰\
         ",
     "20YJ":
-        "❌Omar > *sob*✔\
-        ➡Omar > I can't believe it.✔\
-        ➡Omar > I want everything to be normal again.✔\
-        ➡Omar > If only that fucker didn't do anything!✔\
-        ➡Omar > It's all his fault.✔\
-        ➡ $\
+        "❌Bob > *sob*✔\
+        ➡Bob > I can't believe it.✔\
+        ➡Bob > I want everything to be normal again.✔\
+        ➡Bob > If only that fucker didn't do anything!✔\
+        ➡Bob > It's all his fault.✔\
+        ➡END✔\
         ",
     "kill":
-        "❌Omar > AAAAHHH.✔\
-        ➡Omar > DIE.✔\
+        "❌Bob > AAAAHHH.✔\
+        ➡Bob > DIE.✔\
         ➡> ➰1410YJ10_Years_In_Jail➰\
         ",
     "recorder":
-        "❌Omar > I should probably grab a recorder.✔\
-        ➡Omar > Just in case.✔\
+        "❌Bob > I should probably grab a recorder.✔\
+        ➡Bob > Just in case.✔\
         ➡ Your_Choice > ➰14GTTPGo_to_the_place➰\
         ",
     "GE2":
         "❌*two weeks pass*✔\
-        ➡Omar > Life is good again.✔\
-        ➡Omar > I wonder how is he doing.✔\
-        ➡ $\
+        ➡Bob > Life is good again.✔\
+        ➡Bob > I wonder how is he doing.✔\
+        ➡END.✔\
         ",
     "AOBBS":
-        "❌Omar > It's been two years since that accident.✔\
-        ➡Omar > I still can't sleep at night thinking of what he might do.✔\
-        ➡Omar > fuck,✔ why in the world does he hate me that much?✔\
-        ➡ $\
+        "❌Bob > It's been two years since that accident.✔\
+        ➡Bob > I still can't sleep at night thinking of what he might do.✔\
+        ➡Bob > fuck,✔ why in the world does he hate me that much?✔\
+        ➡END.✔\
         "
 };
 
@@ -220,7 +221,6 @@ let MAX_PROGRESS = 13;
 // ------------- Work on this later
 // initial screen start with a loading screen with an immediate transition to the starting screen
 function transition(option) {
-    if (option=='recorder') {transcript['GTTP']+=' / ➰19recorder1Use_Recorder➰ '}
     // if (current_progress>=MAX_PROGRESS) {return;}
     image = document.getElementsByTagName("img")[0];
     image.attributes.src.value = "resources/scenes/" + scene_image[option] + ".png";
@@ -239,11 +239,7 @@ function loadComplete() {
 
 
 
-
-
-
-
-
+// ➡ Your_Choices > ➰18recorderUse_Recorder➰ / ➰16ignoreIgnore➰ / ➰14GTTPGo_to_the_place➰\
 
 // let c = 0;
 
