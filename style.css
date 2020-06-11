@@ -212,10 +212,10 @@ input[type=submit]:hover {
   font-family: "Andale Mono", AndaleMono, monospace;
   font-weight: lighter;
   text-align: left;
-  font-size:20px;
+  font-size:1.4vw;
   opacity: 0.8;
   /* border: 1px solid #ccc; */
-  padding: 15px;
+  padding: 2%;
   border-radius: 4px;
 }
 
