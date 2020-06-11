@@ -1,5 +1,6 @@
 /* Some resource(s):
 https://www.w3schools.com/howto/howto_css_image_text.asp
+
 */
 
 html {
@@ -36,12 +37,6 @@ body {
                                     supported by Chrome, Edge, Opera and Firefox */
 }
 
-img {
-    align-self: center;
-    max-width: 90%;
-    max-height: 97%
-}
-
 .comic-box {
     visibility: hidden; /* hidden until the loading is complete */
     position: absolute;
@@ -59,6 +54,8 @@ img {
 
 #dialogue {
     width: 80%;
+    height:25%;
+    overflow-y: scroll;
     position: absolute;
     top: 64%;
     left: 10%;
@@ -77,27 +74,11 @@ img {
     color: rgb(255, 238, 0);
 }
 
-/* MERGE SPEAKER AND DIALOGUE */
-
-/* #speaker {
-    width: 95%;
+.scenes {
     position: absolute;
-    top: 66%;
-    left: 10%;
-    font-size: 1.3vw;
-    text-align: left;
-} */
-
-.choice {
-    visibility: hidden;
-    position: absolute;
-    top: 40%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: royalblue;
-    cursor: pointer;
-}
-
-.choice p:hover {
-    color: orange;
+    max-width: 90%;
+    max-height: 97%;
 }

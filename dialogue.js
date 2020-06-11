@@ -6,15 +6,16 @@ document.addEventListener("keyup",function(){skip=false;})
 let skip = false;
 let isStyling = false;
 let isOption = false;
-var x = "";
-// $(document).ready(function(){
-//   $(".bg").click(function(){
-//     $("#Menu").show();
-//   });
-// });
+
+
+// https://stackoverflow.com/questions/18614301
+function updateScroll(){
+    var element = document.getElementById("dialogue");
+    element.scrollTop = element.scrollHeight;
+}
 
 // Base Code from https://www.w3schools.com/howto/tryit.asp
-// Special functions: pause, styling, clear
+// Special functions: pause, styling, clear, etc.
 // Need to disable click or interaction while the script is being typed! While paused, moving onto the next page breaks the page.
 function typeWriter(text, delay, position) {
     if (position < text.length) {
@@ -23,7 +24,7 @@ function typeWriter(text, delay, position) {
         p = position;  // current position
         c = text.charAt(p);  // current character being processed.
         if (c=='✔') {  // use at the end of the sentence. will delay longer (visible pause).
-            d*=40;
+            d=800;
             p+=1;
         } else if (c=='✨') {  // define style for a separate section.
                             // syntax: ✨210color:blueSOMETEXT✨ 2 is the length of the next number, 10 is the length of the styling text.
@@ -68,28 +69,44 @@ function typeWriter(text, delay, position) {
 
                 p+=lenTxt+lenNum+2;
             } else {isOption = false;p++;}
-        } else if (c=='$') {  // "Return home" feature
-            tag = document.createElement("span");
-
+        } else if (c=='$') {  // When game Ends
             attrib1 = document.createAttribute("onclick");
             attrib1.value = "window.history.back()";
-            tag.setAttributeNode(attrib1);  // set onclick of span tag
+            attrib2 = document.createAttribute("onclick");
+            attrib2.value = "location.reload()";
+            attrib3_1 = document.createAttribute("class");
+            attrib3_1.value = "option";
+            attrib4_1 = document.createAttribute("style");
+            attrib4_1.value = "color:tomato";
+            attrib3_2 = document.createAttribute("class");
+            attrib3_2.value = "option";
+            attrib4_2 = document.createAttribute("style");
+            attrib4_2.value = "color:tomato";
 
-            attrib2 = document.createAttribute("class");
-            attrib2.value = "option";
-            tag.setAttributeNode(attrib2);  // set class of span tag
+            tag1 = document.createElement("span");  // "Return" feature
+            tag2 = document.createElement("span");  // "Refresh" feature
 
-            attrib3 = document.createAttribute("style");
-            attrib3.value = "color:tomato";
-            tag.setAttributeNode(attrib3);  // set style of span tag
+            tag1.setAttributeNode(attrib1);
+            tag1.setAttributeNode(attrib3_1);
+            tag1.setAttributeNode(attrib4_1);
 
-            tag.innerText = "<END. Click Here To Return Home>";
-            dialogue.appendChild(tag);
+            tag2.setAttributeNode(attrib2);
+            tag2.setAttributeNode(attrib3_2);
+            tag2.setAttributeNode(attrib4_2);
+            
+            tag1.innerText = " Return ";
+            tag2.innerText = " Replay";
+            
+            dialogue.innerHTML += "END >";
+            dialogue.appendChild(tag1);
+            dialogue.innerHTML += " / ";
+            dialogue.appendChild(tag2);
             p++;
         }
 
         if (isStyling||isOption) {dialogue = dialogue.getElementsByTagName("span")[dialogue.getElementsByTagName("span").length-1];}
         dialogue.innerHTML += text.charAt(p);
+        updateScroll();
         if (skip) {typeWriter(text, delay, ++p);}
         else {setTimeout(function(){typeWriter(text, delay, ++p)}, d);}
     } else {skip = false;}
