@@ -40,7 +40,7 @@ let transcript = {
         ✔ ✔ ✔ ✔ ✔ ✔ ❌ \
         ➡Omar > what the fuck?✔ I didn't add him. ✔ Did he hack into my account?✔ \
         ➡Omar > what should I do?✔ \
-        ➡ Your_Choices > ➰18recorderUse_Recorder➰ / ➰16ignoreIgnore➰ / ➰14GTTPGo_to_the_place➰\
+        ➡ Your_Choices > ➰16ignoreIgnore➰ / ➰14GTTPGo_to_the_place➰\
         ",
     "SP":
         "❌Principal > We recently got an email from one of our students,✔ whose name I will not disclose,✔ that contained a picture.✔ \
@@ -239,6 +239,7 @@ function loadComplete() {
 
 
 
+// ➡ Your_Choices > ➰18recorderUse_Recorder➰ / ➰16ignoreIgnore➰ / ➰14GTTPGo_to_the_place➰\
 
 // let c = 0;
 
