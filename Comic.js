@@ -237,28 +237,6 @@ function loadComplete() {
 
 
 
-// if(dialogue.innerHTML.charAt(211)== "N" &&dialogue.innerHTML.charAt(212) =="D"){
-// console.log("hello");
-// $("#Menu").show();
-// }
-
-// if(dialogue.innerHTML.charAt(185)== "N" &&dialogue.innerHTML.charAt(186) =="D"){
-// console.log("hello");
-// $("#Menu").show();
-// }
-
-// if(dialogue.innerHTML.charAt(223)== "N" &&dialogue.innerHTML.charAt(224) =="D"){
-// console.log("hello");
-// $("#Menu").show();
-// }
-
-// if(dialogue.innerHTML.charAt(225)== "N" &&dialogue.innerHTML.charAt(226) =="D"){
-// console.log("hello");
-// $("#Menu").show();
-// }
-
-
-
 
 
 
