@@ -46,13 +46,16 @@ setTimeout(function () {
       }
     });
 }, 4500);
+setTimeout(function () {
+  $("#fname").focus();
+}, 6000);
 
 var x = 0;
 var p = 0;
 var txt8 = 'Last Name:'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 $(document).on('keypress',function(e) {
-    if(e.which == 13) {
+    if(e.which == 13 && x == 0) {
           $(".Contact-text4").ready(function typeWriter8() {
             if (p < txt8.length) {
               document.getElementById("line4").innerHTML += txt8.charAt(p);
@@ -61,8 +64,13 @@ $(document).on('keypress',function(e) {
             }
             x = 1
           });
+          setTimeout(function () {
+            $("fname").blur();
+            $("#lname").focus();
+          }, 1000);
       }
 });
+
 var q = 0;
 var txt9 = 'Country:'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
@@ -76,6 +84,10 @@ $(document).on('keypress',function(e) {
             }
             x = 2
           });
+          setTimeout(function () {
+            $("#lname").focusout();
+            $("#cname").focus();
+          }, 1000);
       }
 });
 
@@ -92,6 +104,10 @@ $(document).on('keypress',function(e) {
             }
             x = 3
           });
+          setTimeout(function () {
+            $("#cname").focusout();
+            $("#email").focus();
+          }, 1000);
       }
 });
 
@@ -108,6 +124,10 @@ $(document).on('keypress',function(e) {
             }
             x = 4
           });
+          setTimeout(function () {
+            $("#email").focusout();
+            $("#describe").focus();
+          }, 1000);
       }
 });
 
@@ -116,6 +136,7 @@ var txt12 = 'Our team will be in touch with you shortly.'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 $(document).on('keypress',function(e) {
     if(e.which == 13 && x ==4) {
+          $("#describe").focusout();
           $(".Contact-text8").ready(function typeWriter12() {
             if (t < txt12.length) {
               document.getElementById("line8").innerHTML += txt12.charAt(t);
@@ -124,5 +145,8 @@ $(document).on('keypress',function(e) {
             }
             x = 5
           });
+          $("#describe").blur();
+          $("#lname").blur();
+
       }
 });
