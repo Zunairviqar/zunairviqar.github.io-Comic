@@ -9,7 +9,18 @@ $(document).ready(function typeWriter5() {
     setTimeout(typeWriter5, speed);
   }
 });
-
+$(".bg2").click(function(){
+  document.getElementById("line1").innerHTML = 'Are you being hacked or blackmailed?';
+  m = txt5.length;
+});
+$(".bg2").click(function(){
+  document.getElementById("line2").innerHTML = 'Reach out to us!';
+  n= txt6.length;
+});
+$(".bg2").click(function(){
+  document.getElementById("line3").innerHTML = 'First Name:';
+  o= txt7.length;
+});
 var n = 0;
 var txt6 = 'Reach out to us!'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
