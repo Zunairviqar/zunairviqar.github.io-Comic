@@ -71,19 +71,19 @@ function typeWriter(text, delay, position) {
         }
         if (isStyling||isOption) {dialogue = dialogue.getElementsByTagName("span")[dialogue.getElementsByTagName("span").length-1];}
         dialogue.innerHTML += text.charAt(p);
-        console.log(dialogue.innerHTML.length);
-        x = dialogue.innerHTML;
-        console.log(x.length - 1);
+        // console.log(dialogue.innerHTML.length);
+        // x = dialogue.innerHTML;
+        // console.log(x.length - 1);
 
         if (skip) {typeWriter(text, delay, ++p);}
         else {setTimeout(function(){typeWriter(text, delay, ++p)}, d);}
     } else {skip = false;}
-    console.log("Hi");
-    console.log(dialogue.innerHTML);
-    console.log(dialogue.innerHTML.charAt(117));
-    console.log(dialogue.innerHTML.charAt(116));
-    console.log(dialogue.innerHTML.charAt(115));
-    console.log(dialogue.innerHTML.charAt(114));
+    // console.log("Hi");
+    // console.log(dialogue.innerHTML);
+    // console.log(dialogue.innerHTML.charAt(117));
+    // console.log(dialogue.innerHTML.charAt(116));
+    // console.log(dialogue.innerHTML.charAt(115));
+    // console.log(dialogue.innerHTML.charAt(114));
     if(dialogue.innerHTML.charAt(115)== "N" &&dialogue.innerHTML.charAt(116) =="D"){
     console.log("hello");
     $("#Menu").show();

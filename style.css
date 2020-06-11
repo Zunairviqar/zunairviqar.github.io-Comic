@@ -3,6 +3,13 @@ body, html {
   margin: 0;
   padding: 0;
   text-align: center;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Safari */
+  -khtml-user-select: none;    /* Konqueror HTML */
+  -moz-user-select: none;      /* Old versions of Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 .bg {
@@ -164,7 +171,7 @@ input[type=submit]:hover {
   position: absolute;
   font-family: "Andale Mono", AndaleMono, monospace;
   color: #85cb8d; /* Black text color */
-  top: 15%;
+  top: 18%;
   right: 18%;
   margin-left: 11.6%;
   text-align: left;
@@ -184,7 +191,7 @@ input[type=submit]:hover {
 .column {
   flex: 25%;
   padding: 0px;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 
 }
 .column img{
@@ -222,7 +229,7 @@ input[type=submit]:hover {
 
 .Contact-text{
   position: relative;
-  top: 3%;
+  top: 6%;
   right: -12%;
   margin: 0;
   color:#85cb8d;

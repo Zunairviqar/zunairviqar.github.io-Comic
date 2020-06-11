@@ -10,6 +10,39 @@ $(document).ready(function typeWriter1() {
     setTimeout(typeWriter1, speed);
   }
 });
+var x =0;
+$(".bg2").click(function(){
+  document.getElementById("image1").innerHTML = 'Zunair Viqar, Sophomore, From Pakistan, Enjoys chicken dinners in PUBG.';
+  i = txt.length;
+  $(".bg2").click(function(){
+    if(i == txt.length){
+      $("#SecondImage").show()
+    }
+    $(".bg2").click(function(){
+      document.getElementById("image2").innerHTML = 'Tonya Zhang, Sophomore, From China, Visual Arts Major, Passionate about illustration and graphic design, Cooks omelettes.';
+      j = txt2.length;
+      $(".bg2").click(function(){
+        if(i == txt.length){
+          $("#ThirdImage").show()
+        }
+        $(".bg2").click(function(){
+          document.getElementById("image3").innerHTML = 'Yahia Beethoven, Sophomore, From Egypt, Enjoys sushi after playing squash.';
+          k = txt3.length;
+          $(".bg2").click(function(){
+            if(i == txt.length){
+              $("#FourthImage").show()
+            }
+            $(".bg2").click(function(){
+              document.getElementById("image4").innerHTML = 'Joonha Yu, Sophomore, CS Major, Sleeping at 6:30 AM to make a webpage.';
+              l = txt4.length;
+            });
+          });
+        });
+      });
+    });
+  });
+});
+
 
 setTimeout(function () {
     $("#SecondImage").show()

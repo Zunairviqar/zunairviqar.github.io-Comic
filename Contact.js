@@ -101,7 +101,7 @@ $(document).on('keypress',function(e) {
 });
 
 var t = 0;
-var txt12 = 'Our team will be in touch with you shortly'; /* The text */
+var txt12 = 'Our team will be in touch with you shortly.'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 $(document).on('keypress',function(e) {
     if(e.which == 13 && x ==4) {
